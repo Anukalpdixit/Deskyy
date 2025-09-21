@@ -64,5 +64,5 @@ Clueless Agent is evolving rapidly. Here’s what’s done ✅ and what’s comi
 
 1. **Clone the repo**  
    ```bash
-   git clone https://github.com/veddixit18/deskyy.git
+   git clone https://github.com/anukalpdixit/deskyy.git
    cd deskyy

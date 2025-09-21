@@ -36,7 +36,7 @@ class WindowManager {
         height: 35,
         useContentSize: true,
         file: 'index.html',
-        title: 'OpenCluely'
+        title: 'anukalpdixit'
       },
       chat: {
         width: 500,
@@ -528,7 +528,8 @@ class WindowManager {
               }
             }, 50);
           } else {
-            window.setAlwaysOnTop(true);
+            // For Windows and Linux, use 'screen-saver' level for persistence
+            window.setAlwaysOnTop(true, 'screen-saver', 1);
           }
         } catch (error) {
           logger.debug('Error in enforceAlwaysOnTop', { error: error.message });
@@ -536,15 +537,19 @@ class WindowManager {
       }
     };
     
-    // Event-based enforcement
+    // More aggressive event-based enforcement
     window.on('blur', () => {
+      setTimeout(enforceAlwaysOnTop, 10);
       setTimeout(enforceAlwaysOnTop, 50);
+      setTimeout(enforceAlwaysOnTop, 100);
       setTimeout(enforceAlwaysOnTop, 200);
       setTimeout(enforceAlwaysOnTop, 500);
     });
     
     window.on('show', () => {
+      setTimeout(enforceAlwaysOnTop, 10);
       setTimeout(enforceAlwaysOnTop, 50);
+      setTimeout(enforceAlwaysOnTop, 100);
       setTimeout(enforceAlwaysOnTop, 200);
     });
     

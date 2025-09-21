@@ -1,5 +1,5 @@
 {
-  "name": "opencluely",
+  "name": "deskyy",
   "version": "1.0.0",
   "description": "AI Problem Solving Assistant",
   "main": "main.js",
@@ -19,12 +19,12 @@
     "release": "npm run clean && npm run build:all",
     "postinstall": "electron-builder install-app-deps"
   },
-  "author": "@TechyCSR",
+  "author": "@Anukalpdixit",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TechyCSR/OpenCluely"
+    "url": "https://github.com/anukalpdixit/Deskyy"
   },
-  "email": "dev@techycsr.me",
+  "email": "dev@Anukalpdixit.me",
   "license": "ISC",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
@@ -41,8 +41,8 @@
     "electron-builder": "^24.13.3"
   },
   "build": {
-    "appId": "com.opencluely.app",
-    "productName": "OpenCluely",
+    "appId": "com.deskyy.app",
+    "productName": "Deskyy",
     "directories": {
       "output": "dist"
     },
@@ -131,7 +131,7 @@
       "createStartMenuShortcut": true
     },
     "dmg": {
-      "title": "OpenCluely Interview Assistant",
+      "title": "Deskyy Interview Assistant",
       "backgroundColor": "#000000",
       "window": {
         "width": 600,
